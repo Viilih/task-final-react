@@ -4,7 +4,9 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<h1>Um pouco sobre o gui</h1>
+			<Container>
+				<h1>Um pouco sobre o Gui</h1>
+			</Container>
 		</header>
 	);
 };

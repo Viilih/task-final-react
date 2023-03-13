@@ -3,13 +3,14 @@ import { Box, Container } from '@mui/material';
 
 const Section = props => {
 	return (
-		<Box sx={{ backgroundColor: '#333333' }}>
-			<Container
-				maxWidth="lg"
-				sx={{ paddingTop: '3rem', paddingBottom: '3rem' }}
-			>
-				<Box>{props.children}</Box>
-			</Container>
+		<Box
+			sx={{
+				backgroundColor: '#333333',
+				padding: '2rem 1rem',
+			}}
+			className={styles.section}
+		>
+			<Container> {props.children}</Container>
 		</Box>
 	);
 };

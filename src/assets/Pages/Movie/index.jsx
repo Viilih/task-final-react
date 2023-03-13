@@ -38,7 +38,7 @@ const Movie = () => {
 			link: 'https://www.lancamentosnetflix.com.br/wp-content/uploads/2020/03/filme-a-origem.jpg',
 		},
 		{
-			title: 'Truque de Mestre 2',
+			title: 'Sword Art Online',
 			description:
 				'Um jovem fica preso dentro do jogo e se torna o espadachim mais forte para sair dele',
 			link: 'https://pixelnerd.com.br/wp-content/uploads/2022/07/sword_art_online.jpg',

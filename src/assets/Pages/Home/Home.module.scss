@@ -9,3 +9,13 @@
 	width: 30%;
 	border-radius: 1rem;
 }
+.cardGridImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// height: 30%;
+}
+.cardGridImage img {
+	width: 70%;
+	border-radius: 1rem;
+}

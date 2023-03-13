@@ -28,7 +28,10 @@ const Footer = () => {
 									target={'_blank'}
 								/>
 							</a>
-							<a href="https://www.linkedin.com/" target={'_blank'}>
+							<a
+								href="https://www.linkedin.com/in/guilhermenunesdev/"
+								target={'_blank'}
+							>
 								<AiFillLinkedin size={30} color={'#5e60ce'} target={'_blank'} />
 							</a>
 

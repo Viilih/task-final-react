@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -65,7 +65,7 @@ const Home = () => {
 				Quem sou eu?
 			</Typography>
 
-			<Box display={'flex'}>
+			<Box display={'flex'} gap={'1rem'}>
 				<Box>
 					<Box>
 						<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -126,10 +126,82 @@ const Home = () => {
 							</Typography>
 						</TabPanel>
 					</Box>
-					<Box>
+					<Box paddingBottom={'1rem'}>
 						<div className={styles.cardImage}>
 							<img src={stitchImage} alt="foto stitch" />
 						</div>
+					</Box>
+					<hr />
+					<Box padding={'1rem 0'}>
+						<Typography color={'white'} variant="h4">
+							Objetivos
+						</Typography>
+
+						<Grid container spacing={2} marginTop={'1rem'}>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<Typography color={'white'}>
+										Conteudo Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Dolore voluptas quam eaque suscipit. Nisi pariatur
+										asperiores illo quas aut esse veniam vel deleniti ratione
+										eaque adipisci, perferendis consequuntur commodi itaque
+										dolorem labore. Facere praesentium nihil excepturi expedita?
+										Corporis, dolor nihil.
+									</Typography>
+								</div>
+							</Grid>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<img
+										src={
+											'https://esportsheadlines.com/wp-content/uploads/2022/02/Clean-Gaming-Setup-Keyboard-Mouse-Table.jpg'
+										}
+									/>
+								</div>
+							</Grid>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<img
+										src={
+											'https://cdn.pixabay.com/photo/2020/01/28/18/37/family-4800588_960_720.jpg'
+										}
+									/>
+								</div>
+							</Grid>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<Typography color={'white'}>
+										Conteudo Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Dolore voluptas quam eaque suscipit. Nisi pariatur
+										asperiores illo quas aut esse veniam vel deleniti ratione
+										eaque adipisci, perferendis consequuntur commodi itaque
+										dolorem labore. Facere praesentium nihil excepturi expedita?
+										Corporis, dolor nihil.
+									</Typography>
+								</div>
+							</Grid>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<Typography color={'white'}>
+										Conteudo Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Dolore voluptas quam eaque suscipit. Nisi pariatur
+										asperiores illo quas aut esse veniam vel deleniti ratione
+										eaque adipisci, perferendis consequuntur commodi itaque
+										dolorem labore. Facere praesentium nihil excepturi expedita?
+										Corporis, dolor nihil.
+									</Typography>
+								</div>
+							</Grid>
+							<Grid item xs={6} display={'flex'}>
+								<div className={styles.cardGridImage}>
+									<img
+										src={
+											'https://images.contentstack.io/v3/assets/blt279b94f6e22ca52e/bltb342b14423174bae/5f770344ed21e20f14408e7c/stopover-summer.jpg'
+										}
+									/>
+								</div>
+							</Grid>
+						</Grid>
 					</Box>
 				</Box>
 			</Box>
