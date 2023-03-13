@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useState } from 'react';
 import styles from './Home.module.scss';
+import stitchImage from '../../public/imgs/stitch.jpg';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -105,7 +106,7 @@ const Home = () => {
 					</Box>
 					<Box>
 						<div className={styles.cardImage}>
-							<img src="../../public/imgs/stitch.jpg" alt="foto stitch" />
+							<img src={stitchImage} alt="foto stitch" />
 						</div>
 					</Box>
 				</Box>
