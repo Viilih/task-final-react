@@ -1,11 +1,13 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useState } from 'react';
 import styles from './Home.module.scss';
-import stitchImage from '../../public/imgs/stitch.jpg';
+import stitchImage from '/public/imgs/stitch.jpg';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -78,30 +80,50 @@ const Home = () => {
 									{...a11yProps(0)}
 								/>
 								<Tab
-									label={<Typography fontWeight={'600'}>Sobre mim</Typography>}
+									label={
+										<Typography fontWeight={'600'}>O que esperar?</Typography>
+									}
 									{...a11yProps(1)}
 								/>
 								<Tab
-									label={<Typography fontWeight={'600'}>Sobre mim</Typography>}
+									label={<Typography fontWeight={'600'}>Surpresa</Typography>}
 									{...a11yProps(2)}
 								/>
 							</Tabs>
 						</Box>
 						<TabPanel value={value} index={0}>
-							Opa que bom ter você por aqui! <br />
-							Prazer, meu nome é Guilherme e sou desenvolvedor front end e estou
-							desenvolvendo o projeto final do módulo de react do programa Vem
-							Ser da empresa DBC
+							<Typography color={'white'}>
+								Opa que bom ter você por aqui! <br />
+								Prazer, meu nome é Guilherme e sou desenvolvedor front end e
+								estou desenvolvendo o projeto final do módulo de react do
+								programa Vem Ser da empresa DBC.
+							</Typography>
 						</TabPanel>
 						<TabPanel value={value} index={1}>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-							labore vel dolorem accusamus iste numquam similique consequuntur
-							aliquam suscipit. Amet!
+							<Typography color={'white'}>
+								Esse site foite desenvolvido para você que quer saber mais um
+								pouco mais sobre mim, como meus filmes e séries favoritos, até
+								as comidas
+							</Typography>
 						</TabPanel>
 						<TabPanel value={value} index={2}>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-							temporibus provident architecto dolorem est dignissimos.
-							Distinctio non dolor molestiae quia?
+							<Typography color={'white'}>
+								Aqui vai um brinde pra você! <br />
+								Já pensou em aprender os conteúdos mais valiosos do mercado de
+								TI? Então da uma olhadinha nesse link aqui :)
+								<br />
+								<ButtonGroup
+									variant="contained"
+									aria-label="outlined primary button group"
+								>
+									<a
+										href="https://www.dbccompany.com.br/vem-ser/"
+										target={'_blank'}
+									>
+										<Button>Vem Ser DBC</Button>
+									</a>
+								</ButtonGroup>
+							</Typography>
 						</TabPanel>
 					</Box>
 					<Box>
