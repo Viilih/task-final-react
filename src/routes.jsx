@@ -11,6 +11,7 @@ import Home from './assets/Pages/Home';
 import Movie from './assets/Pages/Movie';
 import Error from './assets/Pages/Error';
 import Formulario from './assets/Pages/Formulario';
+import Food from './assets/Pages/Food';
 
 const AppRoutes = () => {
 	return (
@@ -24,6 +25,8 @@ const AppRoutes = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/Movies" element={<Movie />} />
 					<Route path="/Formulario" element={<Formulario />} />
+					<Route path="/Formulario" element={<Formulario />} />
+					<Route path="/Food" element={<Food />} />
 					{/* <Route path="/Grids" element={<Grid />} />
 					<Route path="/BtnPage" element={<BtnPage />} />
 					<Route path="/Cards" element={<Cards />} />

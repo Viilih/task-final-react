@@ -40,6 +40,7 @@ const Card = ({ title, description, image, link, like, dislike }) => {
 					gutterBottom
 					textAlign={'center'}
 					color={'#ffffff'}
+					Width={'100%'}
 				>
 					{description}
 				</Typography>

@@ -15,6 +15,9 @@ export default function Menu() {
 				<MenuBase to="/Formulario">
 					<Button variant="outlined">Formulário</Button>
 				</MenuBase>
+				<MenuBase to="/Food">
+					<Button variant="outlined">Comidas Favoritas</Button>
+				</MenuBase>
 			</Stack>
 		</Box>
 	);
